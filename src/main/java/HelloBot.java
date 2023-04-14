@@ -30,6 +30,7 @@ public class HelloBot extends TelegramLongPollingBot {
                 execute(new SendMessage(chatId.toString(), "Hi " + update.getMessage().getText()));
             } catch (TelegramApiException e) {
                 e.printStackTrace();
+                e.printStackTrace();
             }
         }
     }
